@@ -1,0 +1,57 @@
+{
+  "id": "./",
+  "name": "Layerix Studio",
+  "short_name": "Layerix Studio",
+  "description": "Open PSD, PDF and SVG designs, edit every layer, and export PNG, JPG, WebP, PDF or layered PSD. Works offline on Windows.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "background_color": "#141416",
+  "theme_color": "#141416",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["photo", "design", "graphics", "productivity"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "icons/icon-48.png", "sizes": "48x48", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-64.png", "sizes": "64x64", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-128.png", "sizes": "128x128", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-256.png", "sizes": "256x256", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-1024.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "screenshots": [
+    { "src": "screenshots/editor.webp", "sizes": "1920x1080", "type": "image/webp", "form_factor": "wide", "label": "Edit every layer of a design: text, shapes, effects and blend modes" },
+    { "src": "screenshots/pdf-import.webp", "sizes": "1920x1080", "type": "image/webp", "form_factor": "wide", "label": "Open PDF and Canva exports as separate, editable layers" },
+    { "src": "screenshots/adjustments.webp", "sizes": "1920x1080", "type": "image/webp", "form_factor": "wide", "label": "Adjust photos with one-click looks, in light or dark theme" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "image/vnd.adobe.photoshop": [".psd"],
+        "application/x-layerix": [".layerix"],
+        "image/svg+xml": [".svg"],
+        "application/pdf": [".pdf"]
+      },
+      "icons": [{ "src": "icons/icon-256.png", "sizes": "256x256", "type": "image/png" }],
+      "launch_type": "single-client"
+    }
+  ],
+  "launch_handler": { "client_mode": ["focus-existing", "auto"] },
+  "shortcuts": [
+    {
+      "name": "New design",
+      "short_name": "New",
+      "description": "Start a new design",
+      "url": "./?action=new",
+      "icons": [{ "src": "icons/icon-96.png", "sizes": "96x96", "type": "image/png" }]
+    }
+  ]
+}

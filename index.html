@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layerix Studio</title>
+    <meta name="description" content="Layerix Studio — open PSD, PDF and SVG designs, edit every layer, and export PNG, JPG, WebP, PDF or layered PSD. Works offline." />
+    <meta name="theme-color" content="#141416" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="application-name" content="Layerix Studio" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <style>#boot{z-index:9999;background:#141416;justify-content:center;align-items:center;transition:opacity .25s;display:flex;position:fixed;inset:0}html[data-theme=light] #boot{background:#e9ebf0}#boot img{width:72px;height:72px;animation:1.4s ease-in-out infinite boot-pulse}@keyframes boot-pulse{50%{opacity:.8;transform:scale(.94)}}</style>
+    <script>
+      try {
+        var s = JSON.parse(localStorage.getItem('layerix:settings') || '{}');
+        var t = s.theme || 'dark';
+        if (t === 'system') t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="./assets/index-W4XBXlv0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CtB-Z6Dj.css">
+  </head>
+  <body>
+    <div id="boot"><img src="./icons/icon-192.png" alt="" /></div>
+    <div id="root"></div>
+    <noscript>Layerix Studio needs JavaScript to run.</noscript>
+  </body>
+</html>
