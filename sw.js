@@ -1,5 +1,5 @@
 // Layerix Studio offline service worker — generated at build time.
-const VERSION = '1.0.0-dab6c95785d1';
+const VERSION = '1.2.0';
 const CACHE = 'layerix-' + VERSION;
 const FILES = ["./","./assets/index-CtB-Z6Dj.css","./assets/index-W4XBXlv0.js","./assets/pdf.worker.min-Dkey6ZUl.mjs","./assets/psd.worker-D8vQT_nL.js","./assets/psdCore-lzOVzK1e.js","./icons/apple-touch-icon.png","./icons/favicon-16.png","./icons/favicon-32.png","./icons/icon-1024.png","./icons/icon-128.png","./icons/icon-150.png","./icons/icon-16.png","./icons/icon-192.png","./icons/icon-24.png","./icons/icon-256.png","./icons/icon-310.png","./icons/icon-32.png","./icons/icon-44.png","./icons/icon-48.png","./icons/icon-512.png","./icons/icon-64.png","./icons/icon-96.png","./icons/icon-plated-512.png","./icons/icon.svg","./icons/maskable-192.png","./icons/maskable-512.png","./icons/store-logo-300.png","./index.html","./manifest.webmanifest","./pdfjs/cmaps.zip","./pdfjs/iccs/CGATS001Compat-v2-micro.icc","./pdfjs/standard_fonts.zip","./pdfjs/wasm/jbig2.wasm","./pdfjs/wasm/jbig2_nowasm_fallback.js","./pdfjs/wasm/openjpeg.wasm","./pdfjs/wasm/openjpeg_nowasm_fallback.js","./pdfjs/wasm/qcms_bg.wasm","./privacy.html"];
 
